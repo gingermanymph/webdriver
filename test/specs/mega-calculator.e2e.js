@@ -6,8 +6,8 @@ MULTIPLICATION
 SUBTRACTION
 */
 
-const Calc = require('../../calc');
-const Results = require('../../results');
+const Calc = require('../pageobjects/calc');
+const Results = require('../pageobjects/results');
 
 describe('Adding two numbers', () => {
     it('should add two numbers', async () => {
