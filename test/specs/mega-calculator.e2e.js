@@ -15,8 +15,7 @@ describe('Adding two numbers', () => {
 
         await Calc.calculation(2, 2, 'ADDITION');
         await expect(Results.simpleResult).toBeExisting();
-        await expect(Results.simpleResult).toHaveTextContaining(
-            '4');
+        await expect(Results.simpleResult).toHaveTextContaining('4');
     });
 });
 
@@ -26,8 +25,7 @@ describe('Dividing two numbers', () => {
 
         await Calc.calculation(20, 2, 'DIVISION');
         await expect(Results.simpleResult).toBeExisting();
-        await expect(Results.simpleResult).toHaveTextContaining(
-            '10');
+        await expect(Results.simpleResult).toHaveTextContaining('10');
     });
 });
 
@@ -37,8 +35,7 @@ describe('Dividing by modulo two numbers', () => {
 
         await Calc.calculation(5, 5, 'MODULO');
         await expect(Results.simpleResult).toBeExisting();
-        await expect(Results.simpleResult).toHaveTextContaining(
-            '0');
+        await expect(Results.simpleResult).toHaveTextContaining('0');
     });
 });
 
@@ -48,8 +45,7 @@ describe('Multiply two numbers', () => {
 
         await Calc.calculation(5, 5, 'MULTIPLICATION');
         await expect(Results.simpleResult).toBeExisting();
-        await expect(Results.simpleResult).toHaveTextContaining(
-            '25');
+        await expect(Results.simpleResult).toHaveTextContaining('25');
     });
 });
 
@@ -59,8 +55,7 @@ describe('Subtraction two numbers', () => {
 
         await Calc.calculation(100, 1, 'SUBTRACTION');
         await expect(Results.simpleResult).toBeExisting();
-        await expect(Results.simpleResult).toHaveTextContaining(
-            '99');
+        await expect(Results.simpleResult).toHaveTextContaining('99');
     });
 });
 
